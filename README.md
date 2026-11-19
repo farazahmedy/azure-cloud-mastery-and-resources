@@ -1,38 +1,25 @@
-# ☁️ Azure Cloud Mastery & Resources Hub
+# ☁️ Azure Cloud Engineering & Operations Mastery Hub
 
 [![Microsoft Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
 
-Welcome to the **Azure Cloud Mastery & Resources Hub**! This repository is an all-in-one, battle-tested knowledge base and practical reference guide for Microsoft Azure Cloud engineers, administrators, architects, and DevOps professionals.
+Welcome to the **Azure Cloud Engineering & Operations Mastery Hub**! An enterprise-grade, battle-tested knowledge base and hands-on operational handbook for Microsoft Azure Cloud engineers, administrators, architects, and DevOps professionals.
 
 ---
 
-## 📑 Table of Contents
+## 📑 Repository Contents
 
-1. [🎯 Certification Study Guides](#-azure-certification-study-guides)
-2. [🏛️ Architecture Blueprints](#️-architecture-blueprints)
-3. [🛠️ Daily CLI & PowerShell Cheat Sheets](#️-cli--powershell-cheat-sheets)
-4. [💰 Cost Optimization Strategies](#-cost-optimization-strategies)
-5. [🔐 Governance, Policy & Security](#-governance-policy--security)
-6. [🌟 Curated Awesome Azure Repos & Tools](#-curated-awesome-azure-repos--tools)
-
----
-
-## 🎯 Azure Certification Study Guides
-
-Comprehensive notes, exam outlines, key concepts, and practical tips:
-
-| Certification | Level | Role | Study Guide Link |
-| :--- | :--- | :--- | :--- |
-| **AZ-900** | Fundamental | Cloud Fundamentals | [AZ-900 Study Guide](./certifications/az-900-fundamentals.md) |
-| **AZ-104** | Associate | Azure Administrator | [AZ-104 Study Guide](./certifications/az-104-administrator.md) |
-| **AZ-305** | Expert | Azure Solutions Architect | [AZ-305 Study Guide](./certifications/az-305-solutions-architect.md) |
-| **AZ-400** | Expert | Azure DevOps Engineer | [AZ-400 Study Guide](./certifications/az-400-devops-engineer.md) |
+1. [🏛️ Production Architecture Blueprints](#️-production-architecture-blueprints)
+2. [🚨 Production Runbooks & Troubleshooting](#-production-runbooks--troubleshooting)
+3. [🛡️ Security Hardening & CIS Benchmarks](#️-security-hardening--cis-benchmarks)
+4. [💰 FinOps & Cost Optimization Strategies](#-finops--cost-optimization-strategies)
+5. [🛠️ CLI, PowerShell & KQL Cheat Sheets](#️-cli-powershell--kql-cheat-sheets)
+6. [📘 Core Engineering Deep-Dives](#-core-engineering-deep-dives)
 
 ---
 
-## 🏛️ Architecture Blueprints
+## 🏛️ Production Architecture Blueprints
 
 Real-world architectural patterns aligned with the **Microsoft Well-Architected Framework**:
 
@@ -42,9 +29,31 @@ Real-world architectural patterns aligned with the **Microsoft Well-Architected 
 
 ---
 
-## 🛠️ CLI & PowerShell Cheat Sheets
+## 🚨 Production Runbooks & Troubleshooting
 
-Quick commands for day-to-day administration and scripting:
+- 🩺 [**Incident Response & Troubleshooting Runbook**](./production-runbooks/incident-response-and-troubleshooting.md):
+  - Diagnosing 502/504 Bad Gateway errors on Application Gateway
+  - VM high CPU and OOM root cause analysis
+  - VNet Peering packet drop and UDR route verification
+  - Key Vault 403 Forbidden troubleshooting
+  - Managed Disk IOPS and throughput throttling remediations
+
+---
+
+## 🛡️ Security Hardening & CIS Benchmarks
+
+- 🔒 [**CIS Microsoft Azure Foundations Benchmark Checklist**](./security-and-compliance/cis-azure-benchmark-hardening.md): 25+ essential hardening controls across IAM, Storage, Networking, and Compute.
+- 📜 [**Azure Policy & RBAC Governance Guide**](./governance/azure-policies-guide.md): Management Groups, tag enforcement, geographical deployment restrictions, and least-privilege role assignment matrix.
+
+---
+
+## 💰 FinOps & Cost Optimization Strategies
+
+- 📉 [**Azure Cost Optimization Playbook**](./cheatsheets/cost-optimization-guide.md): Practical checklist covering Azure Reservations, Savings Plans, Unattached Managed Disks, Orphan Public IPs, Storage Lifecycle Management, and Auto-Shutdown policies.
+
+---
+
+## 🛠️ CLI, PowerShell & KQL Cheat Sheets
 
 - 💻 [**Azure CLI (`az`) Cheat Sheet**](./cheatsheets/azure-cli-cheatsheet.md): Essential commands for VMs, Storage, Resource Groups, AKS, Networking, and RBAC.
 - ⚡ [**Azure PowerShell (`Az`) Cheat Sheet**](./cheatsheets/azure-powershell-cheatsheet.md): Cmdlets for batch operations, reporting, and management.
@@ -52,27 +61,17 @@ Quick commands for day-to-day administration and scripting:
 
 ---
 
-## 💰 Cost Optimization Strategies
+## 📘 Core Engineering Deep-Dives
 
-Practical checklist to cut your Azure monthly cloud bill:
-- [**Azure Cost Optimization Guide**](./cheatsheets/cost-optimization-guide.md): Covers Azure Reservations, Savings Plans, Unattached Managed Disks, Orphan Public IPs, Storage Lifecycle Management, and Auto-Shutdown policies.
-
----
-
-## 🔐 Governance, Policy & Security
-
-Enterprise governance and compliance:
-- [**Azure Policies & RBAC Guide**](./governance/azure-policies-guide.md): Management Group hierarchies, custom Azure Policy definitions (allowed regions, tag enforcement, deny public IP), and Principle of Least Privilege RBAC roles.
-
----
-
-## 🌟 Curated Awesome Azure Repos & Tools
-
-- [**Awesome Azure Resources List**](./awesome-azure-resources.md): Links to official Microsoft GitHub repos, open-source utilities, YouTube channels, and blogs.
+- [**Cloud Core Concepts & Architectural Patterns**](./cloud-engineering-guides/azure-core-concepts-guide.md)
+- [**Azure Infrastructure & Networking Administration**](./cloud-engineering-guides/azure-infrastructure-admin-guide.md)
+- [**Enterprise Solutions Architecture Design**](./cloud-engineering-guides/enterprise-solutions-architecture.md)
+- [**DevOps & SRE Production Practices**](./cloud-engineering-guides/devops-sre-production-guide.md)
+- [**Awesome Azure Curated Tools & Frameworks**](./awesome-azure-resources.md)
 
 ---
 
 ## 👤 Author & Contribution
 
 Maintained by **Faraz Ahmed** ([@farazahmedy](https://github.com/farazahmedy)).
-Contributions, corrections, and new blueprints are always welcome! Feel free to fork and open a Pull Request.
+Contributions, real-world incident postmortems, and new blueprints are welcome!
